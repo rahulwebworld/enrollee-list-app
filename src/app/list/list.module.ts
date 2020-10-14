@@ -6,11 +6,12 @@ import { ListRoutingModule } from './list-routing.module';
 import { ViewComponent } from './view/view.component';
 import { EditComponent } from './edit/edit.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DetailComponent } from './detail/detail.component';
 
 
 
 @NgModule({
-  declarations: [ViewComponent, EditComponent],
+  declarations: [ViewComponent, EditComponent, DetailComponent],
   imports: [
     CommonModule,
     ListRoutingModule,

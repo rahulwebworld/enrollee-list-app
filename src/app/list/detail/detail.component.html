@@ -1,0 +1,26 @@
+<div class="container">
+    <h1>View Enrollee</h1>
+  
+    <a href="#" routerLink="/list/view" class="btn btn-primary">Back</a>
+   
+    <div>
+        <strong>ID:</strong>
+        <p>{{ enrollee.id }}</p>
+    </div>
+   
+    <div>
+        <strong>Name:</strong>
+        <p>{{ enrollee.name }}</p>
+    </div>
+   
+    <div>
+        <strong>Active Status:</strong>
+        <p>{{ enrollee.active ? 'Active' : 'Not Active' }}</p>
+    </div>
+
+    <div>
+        <strong>Date of Birth:</strong>
+        <p>{{ enrollee.dateOfBirth}}</p>
+    </div>
+   
+</div>

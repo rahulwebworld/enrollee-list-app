@@ -1,5 +1,5 @@
 <div class="container">
-    <h1>Enrolees List</h1>
+    <h1>Enrollees List</h1>
       
     <table class="table table-bordered">
       <tr>
@@ -15,6 +15,8 @@
         <td>{{ enrollee.active ? 'Active' : 'Not Active' }}</td>
         <td>{{ enrollee.dateOfBirth }}</td>
         <td>
+            
+          <a href="#" [routerLink]="['/list/', enrollee.id, 'detail']" class="btn btn-info">View</a>
           <a href="#" [routerLink]="['/list/',enrollee.id, 'edit']" class="btn btn-primary">Edit</a>
         </td>
       </tr>
